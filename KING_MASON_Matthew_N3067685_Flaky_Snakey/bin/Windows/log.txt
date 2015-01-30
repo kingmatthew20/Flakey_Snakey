@@ -1,0 +1,13 @@
+-- Logging started at Fri Jan 30 14:32:50 2015 --
+I: Application Information:
+   Application Author: n3067685
+   Application Name:   PRG [ User ID: 'n3067685' ] :: Matthew King-Mason.
+I: OpenGL info:
+   Vendor:   NVIDIA Corporation
+   Renderer: Quadro 4000/PCIe/SSE2
+   Version:  4.4.0
+I: Next state to become active: main_game_state
+I: Application activity state changed to: main_game_state
+I: Next state to become active: game_over_state
+I: Application activity state changed to: game_over_state
+-- Logging ended at Fri Jan 30 14:33:05 2015 --

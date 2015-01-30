@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Flaky Snakey ICA" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux Release">
+				<Option output="./bin/Linux/flaky_snakey_ica" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./bin/Linux/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-std=c++11" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="freetype" />
+					<Add library="X11" />
+					<Add library="pthread" />
+					<Add library="rt" />
+					<Add library="prg64" />
+					<Add directory="../lib/linux" />
+				</Linker>
+			</Target>
+			<Target title="Linux Debug">
+				<Option output="./bin/Linux/flaky_snakey_ica" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./bin/Linux/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="freetype" />
+					<Add library="X11" />
+					<Add library="pthread" />
+					<Add library="rt" />
+					<Add library="prg64_d" />
+					<Add directory="../lib/linux" />
+				</Linker>
+			</Target>
+			<Target title="Windows Release">
+				<Option output="./bin/Windows/flaky_snakey_ica" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./bin/Windows/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-std=c++11" />
+				</Compiler>
+				<Linker>
+					<Add library="prg32" />
+					<Add library="freetype.dll" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="opengl32" />
+					<Add directory="../lib/windows/gcc" />
+				</Linker>
+			</Target>
+			<Target title="Windows Debug">
+				<Option output="./bin/Windows/flaky_snakey_ica" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./bin/Windows/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="prg32_d" />
+					<Add library="freetype.dll" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="opengl32" />
+					<Add directory="../lib/windows/gcc" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add directory="../inc" />
+		</Compiler>
+		<Unit filename="inc/ai.hpp" />
+		<Unit filename="inc/flake.hpp" />
+		<Unit filename="inc/fruit.hpp" />
+		<Unit filename="inc/gameover.hpp" />
+		<Unit filename="inc/main_game_state.hpp" />
+		<Unit filename="inc/menu_game_state.hpp" />
+		<Unit filename="inc/pause_game_state.hpp" />
+		<Unit filename="inc/player.hpp" />
+		<Unit filename="log.txt" />
+		<Unit filename="src/ai.cpp" />
+		<Unit filename="src/flake.cpp" />
+		<Unit filename="src/fruit.cpp" />
+		<Unit filename="src/gameover.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/main_game_state.cpp" />
+		<Unit filename="src/menu_game_state.cpp" />
+		<Unit filename="src/pause_game_state.cpp" />
+		<Unit filename="src/player.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

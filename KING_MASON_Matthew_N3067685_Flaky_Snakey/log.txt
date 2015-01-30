@@ -1,0 +1,13 @@
+-- Logging started at Fri Jun 20 14:50:01 2014 --
+I: Application Information:
+   Application Author: n3067685
+   Application Name:   PRG [ User ID: 'n3067685' ] :: Matthew King-Mason.
+I: OpenGL info:
+   Vendor:   Intel
+   Renderer: Intel(R) HD Graphics
+   Version:  3.1.0 - Build 9.17.10.3347
+I: Next state to become active: main_game_state
+I: Application activity state changed to: main_game_state
+I: Next state to become active: game_over_state
+I: Application activity state changed to: game_over_state
+-- Logging ended at Fri Jun 20 14:51:19 2014 --
